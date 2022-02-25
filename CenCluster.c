@@ -129,7 +129,7 @@ CENCLU *CenCluster(char **strs, int num, float sim)
     int numL = num;
     while (numL > 1)
     {
-        printf("numL:%d\n", numL);
+        // printf("numL:%d\n", numL);
         int idxc = getLongest(Lens, numL), numK = 0;
         int *simOnes = pickKids(getdist(strsed, idxc, numL), idxc, numL, sim, &numK);
         simOnes = delOutliers(strs, simOnes, idxMap, &numK, sim);

@@ -1,9 +1,9 @@
 CC := gcc
-scriptName := staralign
+scriptName := CLUSTAR
 
 $(scriptName): main.o FastCluster.o CenCluster.o dist.o cstarAlign.o PSA_fmindex.o PSA_kband.o FMindex.o getRank.o BWT.o fasta.o
 	$(CC) -o $@ $^
-	@echo DONE!
+	@echo COMPILE OVER!
 
 fasta.o: fasta.c fasta.h
 	$(CC) -c $<

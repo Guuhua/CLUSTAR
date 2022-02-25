@@ -7,6 +7,8 @@ typedef struct LENCLUSTER
     /* data */
     int *cluIDx;
     int *startIdx;
+    // numc: the number of seqs
+    // nums: the number of clus 
     int numc, nums;
 }LENCLU;
 
