@@ -15,11 +15,12 @@ void main(int argc, char **argv)
     char *wpath = argv[2];
 
     FILE *fp = fopen(wpath, "w");
-	if (fp == NULL) 
+    if (fp == NULL) 
     {
         printf("Couldn't open the file %s\n", wpath);
         exit(EXIT_FAILURE);
     }
+    fclose(fp);
 
     char **strs = NULL, **labels = NULL;
     size_t num = 0;
